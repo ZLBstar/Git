@@ -1,0 +1,104 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+	<h1>This is heading</h1>
+	<h2>This is heading</h2>
+	<h3>This is heading</h3>
+
+	<p>This is paragraph.</p>
+	<img src="/F:/1.jpg" alt="海贼王" height=200 width=300/>    <!--路径默认为当前文件夹-->
+	<p>This is another paragraph.</p>
+	<img src="/F:/1.jpg" alt="海贼王" height=200 width=300/>    <!--路径默认为当前文件夹-->
+
+
+<p><a href="http://www.baidu.com/" target="_blank">百度一下，你就知道</a></p><!--超链接-->
+
+<table border="1" bordercolor="green">
+	<tr>
+		<td>百</td>
+		<td>度</td>
+	</tr>
+	<tr>
+		<td>一</td>
+		<td>下</td>
+	</tr>
+</table>
+
+<ul>
+	<li>无序</li>
+	<li>列表</li>
+</ul>
+
+<ol>
+	<li>有序</li>
+	<li>列表</li>
+</ol>
+
+
+<form>
+	Firstname:
+	<input type="text" name="firstname"/>
+	<br/>
+	Lastname: 
+	<input type="text" name="lastname"/>
+	<br/>
+</form>
+
+<form>
+	<input type="radio" name="sex" value="male"/>Male
+	</br>
+	<input type="radio" name="sex" value="female"/>Female
+	</br>
+	</br>
+	<input type="checkbox" name="bike"/>I have a bike.
+	</br>
+	<input type="checkbox" name="car"/>I have a car.
+	</br>
+</form>
+
+<form name="input" action="action.html" method="post">
+	Username:
+	<input type="text" id="user" name="user"/>
+	</br>
+	Password:
+	<input type="text" id="password" name="password"/>
+	<input type="submit" value="登陆"">
+	</br>
+</form>
+
+<body bgcolor="gray">  <!--背景颜色-->
+
+<head>
+	<script>
+		function changetext(id){
+			id.innerHTML="谢谢";
+		}
+	</script>
+</head>
+<body>
+	<h1 onclick="changetext(this)">请单击该文本</h1>
+</body>
+
+<div id="div1">
+	<p id=p1>这是一个段落</p>
+</div>
+<script>
+	var para=document.createElement("p");
+	var node=document.createTextNode("这是一个新段落");
+	para.appendChild(node);
+	var element=document.getElementById("div1");
+	element.appendChild(para);
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
